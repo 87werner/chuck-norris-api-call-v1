@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Search for a joke</h1>
+
+
+{{!-- name="jokeCategory" how w e get the input data and use it later, action="/displayJoke" where we want the data (jone) to be displayed  --}}
+    <form action="/displayJoke" method="GET">
+        <input required type="text" name="jokeCategory" /> <br> 
+        <button type="submit">Search</button>
+    </form><br/>
+
+  <form action="/" method="GET">
+         <br/> 
+        <button type="submit">Home Page</button>
+    </form><br/>
+
+</body>
+</html>

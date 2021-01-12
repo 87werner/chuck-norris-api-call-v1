@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(138, 251, 242);
+}
+
+h1{
+    font-family:monospace ;
+    font-size: 30px;
+    font-style: italic;
+}
