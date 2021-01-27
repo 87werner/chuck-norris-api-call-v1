@@ -7,3 +7,8 @@ h1{
     font-size: 30px;
     font-style: italic;
 }
+button{
+    background-color: rgb(138, 251, 242);
+    color: rgba(136, 54, 10, 0.954);
+    
+}

@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   const myApi = await axios.get("https://api.chucknorris.io/jokes/random"); // myApi hold the value of the api
-  console.log(myApi.data); // only grabs the data from the api object 
+   
   res.render("index", {
     joke: myApi.data.value // joke is now a key with the value, myApi.data is an object and we are accesing the value of ir
   });
@@ -28,10 +28,7 @@ app.get("/searchJoke", (req, res) => {
 });
 
 app.get("/displayJoke", async (req, res) => {
-  //Method GET - accessing the variable jokeCategory from URL
-  console.log( req.query.jokeCategory )
-  //Method POST - accessing the variable jokeCategory from URL we dont use query, we use body
-  // console.log( req.body.jokeCategory )
+ 
 
   const category = req.query.jokeCategory;
 
@@ -56,6 +53,6 @@ app.get("*", (req, res) => {
   res.send("<h1>Sorry this page doesn't exist</h1>");
 });
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+app.listen(5001, () => {
+  console.log("Server is running on port 5001");
 });
